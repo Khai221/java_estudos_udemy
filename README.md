@@ -94,6 +94,7 @@ public class EntradaDeDados {
 ```
 
 Principais Métodos next do Scanner
+```
 next()	        String (próximo token)	       String str = sc.next();
 nextLine()	     String (linha inteira)	       String line = sc.nextLine();
 nextInt()	       int	                         int number = sc.nextInt();
@@ -103,6 +104,7 @@ nextLong()	     long	                         long value = sc.nextLong();
 nextShort()	     short	                       short value = sc.nextShort();
 nextByte()	     byte	                         byte value = sc.nextByte();
 nextBoolean()	   boolean	                     boolean value = sc.nextBoolean();
+```
 Observações Importantes:
 Delimitadores: Por padrão, o Scanner usa espaços em branco (espaços, tabulações, quebras de linha) como delimitadores entre os tokens.
 Erros: Se o usuário inserir um valor incompatível com o tipo esperado, uma exceção, como InputMismatchException, será lançada. Exemplo: inserir uma string quando o programa espera um número inteiro.
