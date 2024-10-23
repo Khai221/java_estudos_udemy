@@ -56,10 +56,15 @@ System.out.printf("And %s, which price is $ %.2f%n", product2, price2);
 
 ```
 O printf permite a inserção de variáveis no meio do texto, usando "placeholders" que são substituídos pelos valores das variáveis passadas como argumento. A seguir, os placeholders utilizados no exemplo e sua função:
-%s: Usado para exibir Strings. exemplo: ***System.out.printf("Products: %s", product1);***
-%d: Usado para exibir números inteiros (inteiros decimais). exemplo: ***System.out.printf("Record: %d years old", age);***
-%f: Usado para exibir números de ponto flutuante (double ou float). exemplo: ***System.out.printf("which price is $ %.2f", price1);***
-%n: Usado para quebra de linha (uma forma mais segura de inserir nova linha em diferentes sistemas operacionais). exemplo: ***System.out.printf("%n%s", product2);***
+
+%s: Usado para exibir Strings. exemplo: 
+```System.out.printf("Products: %s", product1);```
+%d: Usado para exibir números inteiros (inteiros decimais). exemplo: 
+```System.out.printf("Record: %d years old", age);```
+%f: Usado para exibir números de ponto flutuante (double ou float). exemplo: 
+```System.out.printf("which price is $ %.2f", price1);```
+%n: Usado para quebra de linha (uma forma mais segura de inserir nova linha em diferentes sistemas operacionais). exemplo: 
+```System.out.printf("%n%s", product2);```
 -------- --------- -------- --------- -------- ---------
 
 
