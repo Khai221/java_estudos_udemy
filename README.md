@@ -45,14 +45,16 @@ Saída:
 
 3 - printf: O método printf permite formatar a saída com base em uma string de formato. Ele é útil quando você precisa exibir variáveis em um formato específico, como limitar casas decimais ou alinhar texto. Ele não adiciona automaticamente uma nova linha ao final (a menos que seja incluído o "%n" ou "\n" na string de formato).
 Exemplo (Utilizando dos tipos de dados e a string formatada):
-    ```
-    String product1 = "Computer";
-    String product2 = "Office desk";
-    double price1 = 2100.0;
-    double price2 = 650.50;
-    System.out.printf("Products: %s, which price is $ %.2f%n", product1, price1);
-    System.out.printf("And %s, which price is $ %.2f%n", product2, price2);
-    ```
+```
+
+String product1 = "Computer";
+String product2 = "Office desk";
+double price1 = 2100.0;
+double price2 = 650.50;
+System.out.printf("Products: %s, which price is $ %.2f%n", product1, price1);
+System.out.printf("And %s, which price is $ %.2f%n", product2, price2);
+
+```
 O printf permite a inserção de variáveis no meio do texto, usando "placeholders" que são substituídos pelos valores das variáveis passadas como argumento. A seguir, os placeholders utilizados no exemplo e sua função:
 %s: Usado para exibir Strings. exemplo: ***System.out.printf("Products: %s", product1);***
 %d: Usado para exibir números inteiros (inteiros decimais). exemplo: ***System.out.printf("Record: %d years old", age);***
