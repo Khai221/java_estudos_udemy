@@ -68,6 +68,7 @@ O printf permite a inserção de variáveis no meio do texto, usando "placeholde
 %f: Usado para exibir números de ponto flutuante (double ou float). exemplo: 
 
 ```System.out.printf("which price is $ %.2f", price1);```
+
 %n: Usado para quebra de linha (uma forma mais segura de inserir nova linha em diferentes sistemas operacionais). exemplo: 
 
 ```System.out.printf("%n%s", product2);```
