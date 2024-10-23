@@ -18,7 +18,7 @@ Estes tipos armazenam a referência a um objeto. Incluem classes, interfaces, ar
 - **Arrays**: Exemplo: `int[]`, `String[]`.
 - **Interfaces**: Exemplo: `List`, `Runnable`.
 - **Enums**: Conjuntos de constantes. Exemplo: 
-    enum Dia { SEGUNDA, TERCA, QUARTA }```
+   ``` enum Dia { SEGUNDA, TERCA, QUARTA }```
 -------- --------- -------- --------- -------- ---------
 
 
@@ -26,30 +26,33 @@ Estes tipos armazenam a referência a um objeto. Incluem classes, interfaces, ar
 ### Diferença entre print, println e printf
 1 - print: O método print exibe o texto passado como argumento na saída padrão (console), mas não adiciona uma nova linha ao final da impressão. Isso significa que a próxima saída será exibida na mesma linha.
 Exemplo:
+```
     System.out.print("Hello, ");
     System.out.print("world!");
-
+```
 Saída:
     Hello, world!
 
 2 - println: O método println também exibe o texto passado como argumento, mas adiciona uma nova linha ao final. Isso significa que a próxima saída será exibida em uma nova linha.
 Exemplo:
+```
     System.out.println("Hello, ");
     System.out.println("world!");
-    
+``` 
 Saída:
     Hello, 
     world!
 
 3 - printf: O método printf permite formatar a saída com base em uma string de formato. Ele é útil quando você precisa exibir variáveis em um formato específico, como limitar casas decimais ou alinhar texto. Ele não adiciona automaticamente uma nova linha ao final (a menos que seja incluído o "%n" ou "\n" na string de formato).
 Exemplo (Utilizando dos tipos de dados e a string formatada):
+    ```
     String product1 = "Computer";
     String product2 = "Office desk";
     double price1 = 2100.0;
     double price2 = 650.50;
     System.out.printf("Products: %s, which price is $ %.2f%n", product1, price1);
     System.out.printf("And %s, which price is $ %.2f%n", product2, price2);
-
+    ```
 O printf permite a inserção de variáveis no meio do texto, usando "placeholders" que são substituídos pelos valores das variáveis passadas como argumento. A seguir, os placeholders utilizados no exemplo e sua função:
 %s: Usado para exibir Strings. exemplo: ***System.out.printf("Products: %s", product1);***
 %d: Usado para exibir números inteiros (inteiros decimais). exemplo: ***System.out.printf("Record: %d years old", age);***
@@ -63,7 +66,7 @@ O printf permite a inserção de variáveis no meio do texto, usando "placeholde
 Usando a Classe Scanner
 A classe Scanner permite ler a entrada de dados do usuário. Exemplo de uso para ler String, int e double:
 
-{
+```
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -88,7 +91,7 @@ public class EntradaDeDados {
         sc.close(); // Fechando o Scanner
     }
 }
-}
+```
 
 Principais Métodos next do Scanner
 next()	        String (próximo token)	       String str = sc.next();
