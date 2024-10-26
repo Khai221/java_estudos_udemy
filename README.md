@@ -125,6 +125,105 @@ Erros: Se o usuário inserir um valor incompatível com o tipo esperado, uma exc
 -------- --------- -------- --------- -------- ---------
 
 
+# ESTRUTURAS CONDICIONAIS
+### IF-ELSE, ELSE IF E SWITCH CASE
+As estruturas condicionais permitem a execução de blocos de código com base em condições específicas.
+
+### Estrutura if-else
+Usada para executar um bloco de código apenas se uma condição for verdadeira, e outro bloco se for falsa.
+```
+public class CondicionalIfElse {
+    public static void main(String[] args) {
+        int idade = 18;
+
+        if (idade >= 18) {
+            System.out.println("Você é maior de idade.");
+        } else {
+            System.out.println("Você é menor de idade.");
+        }
+    }
+}
+```
+Saída:
+```
+Você é maior de idade.
+```
+
+### Estrutura else if
+Usada quando há múltiplas condições para verificar, executando o bloco correspondente à primeira condição verdadeira.
+```
+public class CondicionalElseIf {
+    public static void main(String[] args) {
+        int nota = 85;
+
+        if (nota >= 90) {
+            System.out.println("Nota: A");
+        } else if (nota >= 80) {
+            System.out.println("Nota: B");
+        } else if (nota >= 70) {
+            System.out.println("Nota: C");
+        } else {
+            System.out.println("Nota: D");
+        }
+    }
+}
+```
+Saída:
+```
+Nota: B
+```
+
+### Estrutura switch-case
+Útil para verificar um valor específico entre várias opções (casos). 
+O switch compara uma variável com valores predefinidos (case), e default é executado se nenhum dos case corresponder.
+
+```
+public class CondicionalSwitchCase {
+    public static void main(String[] args) {
+        int dia = 3;
+        String diaSemana;
+
+        switch (dia) {
+            case 1:
+                diaSemana = "Domingo";
+                break;
+            case 2:
+                diaSemana = "Segunda-feira";
+                break;
+            case 3:
+                diaSemana = "Terça-feira";
+                break;
+            case 4:
+                diaSemana = "Quarta-feira";
+                break;
+            case 5:
+                diaSemana = "Quinta-feira";
+                break;
+            case 6:
+                diaSemana = "Sexta-feira";
+                break;
+            case 7:
+                diaSemana = "Sábado";
+                break;
+            default:
+                diaSemana = "Dia inválido";
+                break;
+        }
+
+        System.out.println("Dia da semana: " + diaSemana);
+    }
+}
+```
+Saída:
+```
+Dia da semana: Terça-feira
+```
+Esses exemplos são fundamentais para o controle de fluxo em Java e ajudam a estruturar a execução do programa conforme diferentes condições.
+
+
+
+
+
 
 
 
